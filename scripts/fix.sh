@@ -6,4 +6,11 @@ REPLACE1="<meta name=\"author\" content=\"co\">\n<meta name=\"keywords\" content
 PATTERN2="<meta name=\"description\" content=\"\([^\"]\+\)\">"
 REPLACE2="<meta name=\"description\" content=\"Javadoc Project Zomboid Modding API \1\">"
 
-find 38.30 39.67 40.43 41.56 -type f -name '*.html' -print -exec sed -i -e "s/${PATTERN1}/${REPLACE1}/" -e "s/${PATTERN2}/${REPLACE2}/" {} \;
+if [ -z "${1}" ]; then
+	echo "Usage: ${0} <version>..."
+	exit
+fi
+
+# TODO: Check if version has already been fixed or we end up with twice the same tags
+
+find "${@}" -type f -name '*.html' -print -exec sed -i -e "s/${PATTERN1}/${REPLACE1}/" -e "s/${PATTERN2}/${REPLACE2}/" {} \;
