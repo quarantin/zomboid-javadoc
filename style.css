@@ -1,7 +1,50 @@
-
 body {
-	background-color: black;
+	color: white;
 	text-align: center;
+	background-color: #0d191f;
+}
+
+div.header {
+	height: 400px;
+	background-image: url('background.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+div.logo {
+	position: absolute;
+	left: 50px;
+	top: 50px;
+}
+
+div.logo img {
+	height: 100px;
+	width: 151px;
+}
+
+div.title {
+	background-image: url('blood.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: relative;
+	top: 300px;
+	margin: 0 auto;
+	height: 100px;
+	width: 150px;
+}
+
+div.infobar {
+	background-color: black;
+	font-family: 'Bebas Neue', sans-serif, cursive;
+	font-weight: 500;
+	font-size: 20px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	height: 50px;
+	margin-bottom: 20px;
+	padding-top: 20px;
 }
 
 a, a:link, a:active, a:visited {
