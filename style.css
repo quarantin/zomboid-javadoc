@@ -1,0 +1,17 @@
+
+body {
+	background-color: black;
+	text-align: center;
+}
+
+a, a:link, a:active, a:visited {
+	color: red;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:hover {
+	color: white;
+	background-color: transparent;
+	text-decoration: none;
+}
