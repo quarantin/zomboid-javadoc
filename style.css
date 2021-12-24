@@ -1,60 +1,18 @@
-body {
+h1 {
+	width: 110px;
+}
+
+div.apicustom {
 	color: white;
 	text-align: center;
-	background-color: #0d191f;
-	font-family: 'Bebas Neue', sans-serif, cursive;
-	font-weight: 500;
-	letter-spacing: 2px;
-	text-transform: uppercase;
 }
 
-div.header {
-	height: 400px;
-	background-image: url('background.png');
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-div.logo {
-	position: absolute;
-	left: 50px;
-	top: 50px;
-}
-
-div.logo img {
-	height: 100px;
-	width: 151px;
-}
-
-div.title {
-	background-image: url('blood.png');
-	background-position: center center;
-	background-repeat: no-repeat;
-	font-size: 45px;
-	position: relative;
-	top: 250px;
-	margin: 0 auto;
-	height: 120px;
-	width: 250px;
-}
-
-div.infobar {
-	background-color: black;
-	font-size: 20px;
-	height: 50px;
-	margin-bottom: 20px;
-	padding-top: 20px;
-}
-
-a, a:link, a:active, a:visited {
+div.apicustom a, a:link, a:active, a:visited, a:hover {
 	color: red;
 	background-color: transparent;
 	text-decoration: none;
 }
 
-a:hover {
+div.apicustom a:hover {
 	color: white;
-	background-color: transparent;
-	text-decoration: none;
 }
